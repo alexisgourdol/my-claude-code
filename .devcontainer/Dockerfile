@@ -25,7 +25,20 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
   jq \
   nano \
   vim \
+  python3.11 \
+  python3.11-venv \
+  python3.11-dev \
+  python3-pip \
+  curl \
   && apt-get clean && rm -rf /var/lib/apt/lists/*
+
+# Install uv package manager
+RUN curl -LsSf https://astral.sh/uv/install.sh | sh \
+  && mv /root/.cargo/bin/uv /usr/local/bin/uv
+
+# Make python3.11 the default python3
+RUN update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.11 1 \
+  && update-alternatives --install /usr/bin/python python /usr/bin/python3.11 1
 
 # Ensure default node user has access to /usr/local/share
 RUN mkdir -p /usr/local/share/npm-global && \
