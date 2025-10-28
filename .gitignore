@@ -79,4 +79,4 @@ dmypy.json
 .vscode
 
 # AI
-CLAUDE.md
+.claude/

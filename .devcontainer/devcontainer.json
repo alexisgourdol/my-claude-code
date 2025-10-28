@@ -20,7 +20,6 @@
                 "ms-python.python",
                 "charliermarsh.ruff"
             ],
-            // uncomment lines below accordingly e.g. if you use a venv, or set up pytest ...
             "settings": {
                 "python.defaultInterpreterPath": "/usr/bin/python3",
                 "python.testing.pytestEnabled": true,
