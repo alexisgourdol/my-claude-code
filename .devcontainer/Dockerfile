@@ -8,6 +8,7 @@ ARG CLAUDE_CODE_VERSION=latest
 # Install basic development tools and iptables/ipset
 RUN apt-get update && apt-get install -y --no-install-recommends \
     less \
+    tree \
     git \
     procps \
     sudo \
