@@ -54,7 +54,7 @@ To allow access to additional IP ranges without DNS resolution, add them directl
 
 ## Python Development
 
-The devcontainer has Python support configured but currently commented out in `devcontainer.json:25-38`:
+The devcontainer includes Python 3.11.2 with support configured but currently commented out in `devcontainer.json:25-38`:
 - Virtual environment support (`.venv`)
 - pytest testing framework
 - Ruff for linting and formatting

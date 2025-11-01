@@ -33,18 +33,19 @@ Contains :
 5. In the terminal, type `claude` to launch claude code
 6. Follow the log in process (Claude account, or API usage)
 7. Start coding away
+    - set up claude configs and create a `.claude` folder (ignored by version control in `.gitingore`by defualt)
     - python version installed : 3.11
-    - for other versions use [`uv python install`](!https://docs.astral.sh/uv/guides/install-python/#getting-started)
-    - you can start a project with [`uv init`](!https://docs.astral.sh/uv/getting-started/features/#projects)
+    - for other versions use [`uv python install`](https://docs.astral.sh/uv/guides/install-python/#getting-started)
+    - you can start a project with [`uv init`](https://docs.astral.sh/uv/getting-started/features/#projects)
 
 ## Inspired by
 
-- [Claude Docs - Development containers](!https://docs.claude.com/en/docs/claude-code/devcontainer)
-- [Claude Code: Best practices for agentic coding](!https://www.anthropic.com/engineering/claude-code-best-practices)
-- [Christine Payton - !How to install and run Claude Code in a Container (Windows, Mac, or Linux)](!https://youtu.be/VB68aY71bTI?si=YeXPn4Xvx9qvYw-p)
-- [Ian Nuttall - Use Claude Code in auto-pilot (SAFELY!)](!https://www.youtube.com/watch?v=8dqqa0dLpGU)
+- [Claude Docs - Development containers](https://docs.claude.com/en/docs/claude-code/devcontainer)
+- [Claude Code: Best practices for agentic coding](https://www.anthropic.com/engineering/claude-code-best-practices)
+- [Christine Payton - !How to install and run Claude Code in a Container (Windows, Mac, or Linux)](https://youtu.be/VB68aY71bTI?si=YeXPn4Xvx9qvYw-p)
+- [Ian Nuttall - Use Claude Code in auto-pilot (SAFELY!)](https://www.youtube.com/watch?v=8dqqa0dLpGU)
 - [Fuzz Puppy- Step-by-Step: Run Claude Code SAFELY in a Dev Container (VS Code + Docker)](!https://www.youtube.com/watch?v=7fkh1Up7O-c)
-- [Steve (Builder.io) - How I use Claude Code (+ my best tips)](!https://www.youtube.com/watch?v=n7iT5r0Sl_Y)
+- [Steve (Builder.io) - How I use Claude Code (+ my best tips)](https://www.youtube.com/watch?v=n7iT5r0Sl_Y)
     - `/model`to switch between Opus and Sonnet
     - `/clear` to free up context : use a lot
     - up arrow to go to previous chat messages
@@ -58,7 +59,7 @@ Contains :
         ]
         }
         ```
-- [AI with Avthar - 6 Months of Claude Code Lessons in 27 Minutes](!https://www.youtube.com/watch?v=rfDvkSkelhg)
+- [AI with Avthar - 6 Months of Claude Code Lessons in 27 Minutes](https://www.youtube.com/watch?v=rfDvkSkelhg)
     - `$ claude --resume` to continue a previous session
     - `/to-do` can happen automatically but you can prompt claude to use this feature explicitly
     - bash command with `!`
@@ -92,16 +93,19 @@ Contains :
         - `/agents`
         - `/mcp` for database, playright for browser automation,  figma ... ; scraping and search : exa, firecrawl, tavily ; productivity : obsidian etc... ; Ahrefs just released their MCP server - endless SEO opportunities
 
-- [Yifan - Beyond the Hype. - The Complete Claude Code Workflow (90% Skip This)](!https://www.youtube.com/watch?v=AXz6TMAwqnY)
+- [Yifan - Beyond the Hype. - The Complete Claude Code Workflow (90% Skip This)](https://www.youtube.com/watch?v=AXz6TMAwqnY)
     - in `.claude/settings.local.json` to start letting it edit files directly
-        ```{
-    "permissions": {
-        "defaultMode": "acceptEdits",
-        ```
+```
+{
+"permissions": {
+    "defaultMode": "acceptEdits",
+    }
+}
+```
     - `#` to add context on the fly in memory thoughout the session
     - `claude -p` to not enter in interactive mode (will not see thinking process, just get result)
     - `claude --continue` to continue on the previous session
     - `claude --resume` to pick a past session (git branch visible + summary)
-- [Anthropic - Mastering Claude Code in 30 minutes](!https://www.youtube.com/watch?v=6eBSHbLKuN0)
+- [Anthropic - Mastering Claude Code in 30 minutes](https://www.youtube.com/watch?v=6eBSHbLKuN0)
 
 
