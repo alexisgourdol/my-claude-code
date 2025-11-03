@@ -65,6 +65,9 @@ done < <(echo "$gh_ranges" | jq -r '(.web + .api + .git)[]' | aggregate -q)
 
 # Resolve and add other allowed domains
 for domain in \
+    "pypi.org" \
+    "files.pythonhosted.org" \
+    "install.duckdb.org" \
     "registry.npmjs.org" \
     "api.anthropic.com" \
     "sentry.io" \
@@ -79,7 +82,7 @@ for domain in \
         echo "ERROR: Failed to resolve $domain"
         exit 1
     fi
-    
+
     while read -r ip; do
         if [[ ! "$ip" =~ ^[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}$ ]]; then
             echo "ERROR: Invalid IP from DNS for $domain: $ip"
