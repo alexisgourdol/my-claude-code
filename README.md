@@ -33,7 +33,7 @@ Contains :
 5. In the terminal, type `claude` to launch claude code
 6. Follow the log in process (Claude account, or API usage)
 7. Start coding away
-    - set up claude configs and create a `.claude` folder (ignored by version control in `.gitingore`by defualt)
+    - set up claude configs and create a `.claude` folder (ignored by version control in `.gitingore` by default)
     - python version installed : 3.11
     - for other versions use [`uv python install`](https://docs.astral.sh/uv/guides/install-python/#getting-started)
     - you can start a project with [`uv init`](https://docs.astral.sh/uv/getting-started/features/#projects)
