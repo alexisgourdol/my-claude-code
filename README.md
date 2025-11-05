@@ -33,10 +33,11 @@ Contains :
 5. In the terminal, type `claude` to launch claude code
 6. Follow the log in process (Claude account, or API usage)
 7. Start coding away
-    - set up claude configs and create a `.claude` folder (ignored by version control in `.gitingore` by default)
+    - Optional : set up claude configs and create a `.claude` folder (ignored by version control in `.gitingore` by default)
     - python version installed : 3.11
     - for other versions use [`uv python install`](https://docs.astral.sh/uv/guides/install-python/#getting-started)
     - you can start a project with [`uv init`](https://docs.astral.sh/uv/getting-started/features/#projects)
+    - Optional : when working with an existing repo that is  mounted in devcontainer.json, you can add the files in your current VS Code window with `Cmd`+`P` > `Workspaces: Add Folder to Workspace`. If you don't need to see your files, no need to run this, claude will still have access to them.
 
 ## Inspired by
 
