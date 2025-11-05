@@ -80,3 +80,9 @@ dmypy.json
 
 # AI
 .claude/
+
+
+# temporary removal as the build is stable
+# prevents git changes while changing repos mounted in devcontainer.json
+# remove from .gitignore if/when build process changes
+.devcontainer/
